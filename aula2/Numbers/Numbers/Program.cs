@@ -85,13 +85,24 @@ namespace Numbers
             double at7 = Math.Pow(2+8, 2) + 18 * 4 - 5 / 3;
             Console.WriteLine(at7);
 
+            Console.Write("\nDigite o ano: ");
+            int ano = int.Parse(Console.ReadLine());
+
+            if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0)
+            {
+                Console.WriteLine("{0} é um ano bissexto.", ano);
+            }
+            else
+            {
+                Console.WriteLine("{0} não é um ano bissexto.", ano);
+
+
+            }
 
 
 
 
-
-
-            Console.ReadKey();
+                Console.ReadKey();
         }
     }
 }
