@@ -15,7 +15,7 @@ namespace NumeroPrimo
             Console.WriteLine("Digite um número:");
 
             var num1 = Convert.ToInt32(Console.ReadLine());
-            if (num1 == 0 || num1 == 1)
+            if (num1 <= 1)
             {
                 Console.WriteLine($"{num1} não é um número primo");
                 Console.ReadKey();
@@ -32,7 +32,7 @@ namespace NumeroPrimo
 
                 }
                 Console.WriteLine($"{num1} é um número primo");
-                Console.ReadKey(); ;
+                Console.ReadKey();
             }
         }
     }
