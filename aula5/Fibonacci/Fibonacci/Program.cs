@@ -15,7 +15,9 @@ namespace Fibonacci
             while (fibo.Count < 20) 
             {
                 var NumeroAnterior1 = fibo[fibo.Count - 1];
+                //Console.WriteLine(NumeroAnterior1);
                 var NumeroAnterior2 = fibo[fibo.Count - 2];
+                //Console.WriteLine(NumeroAnterior2);
 
                 fibo.Add(NumeroAnterior1 + NumeroAnterior2);
             }
